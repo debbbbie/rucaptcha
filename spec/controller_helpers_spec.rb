@@ -111,4 +111,4 @@ describe RuCaptcha do
       end
     end
   end
-end
+end if defined? ActionController

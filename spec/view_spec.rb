@@ -7,4 +7,4 @@ describe ActionView::Base do
       expect(view.respond_to?(:rucaptcha_input_tag)).to eq true
     end
   end
-end
+end if defined?(ActionView)

@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.license               = "MIT"
   s.required_ruby_version = ">= 2.0.0"
 
-  s.add_dependency 'railties', '>= 3.2'
+  # s.add_dependency 'railties', '>= 3.2'
+  s.add_dependency 'activesupport', '>= 3.2'
   s.add_development_dependency 'rake-compiler', '~> 1'
 end

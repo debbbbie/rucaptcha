@@ -12,4 +12,4 @@ module RuCaptcha
       RuCaptcha.check_cache_store!
     end
   end
-end
+end if defined?(Rails)

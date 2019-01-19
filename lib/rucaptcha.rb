@@ -1,5 +1,5 @@
-require 'rails'
-require 'action_controller'
+# require 'rails'
+# require 'action_controller'
 require 'active_support/all'
 require 'rucaptcha/rucaptcha'
 require 'rucaptcha/version'
@@ -21,7 +21,7 @@ module RuCaptcha
       @config.outline       = false
       @config.expires_in    = 2.minutes
 
-      if Rails.application
+      if defined?(Rails) and Rails.respond_to?(:application) and Rails.application
         @config.cache_store = Rails.application.config.cache_store
       else
         @config.cache_store = :mem_cache_store

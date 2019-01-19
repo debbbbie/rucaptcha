@@ -82,7 +82,7 @@ module RuCaptcha
       Rails.logger.warn "
         WARNING! The session.id is blank, RuCaptcha can't work properly, please keep session available.
         More details about this: https://github.com/huacnlee/rucaptcha/pull/66
-      "
+      " if defined?(Rails)
     end
   end
 end
